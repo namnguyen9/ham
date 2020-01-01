@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kiểm tra số nguyên tố</title>
+</head>
+
+<body>
+    <script>
+        function ktsn(number) {
+            if (number < 2) {
+                return false;
+            }
+            if (number == 2) // số chẵn duy nhất là số nguyên tố
+            {
+                return true;
+            }
+            if (number % 2 == 0) {
+                return false;
+            }
+            for (let i = 3; i < number; i + 2) {
+                if (number % i == 0) {
+                    return false;
+                }
+                return true;
+            }
+
+        }
+        // let num = parseInt(prompt("nhập số"));
+        // let result = ktsn(num);
+
+        for (let i = 2; i < 10000; i++) {
+            if (ktsn(i)) {
+                console.log(i);
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

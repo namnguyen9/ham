@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>đổi giữa feet và meterst</title>
+</head>
+
+<body>
+    <p>
+        <label>footToMeter</label>
+        <input id="value" type="number" placeholder="Nhập số " oninput="footToMeter(this.value)"
+            onchange="footToMeter(this.value)">
+        <br>
+        <label>meterToFoot</label>
+        <input id="value" type="number" placeholder="Nhập số " oninput="meterToFoot(this.value)"
+            onchange="meterToFoot(this.value)">
+        <p>Result: <span id="result"></span></p>
+    </p>
+    <script>
+        function footToMeter(num1) {
+            num1 = parseFloat(num1);
+            document.getElementById("result").innerHTML = 0.305 * num1;
+        }
+        function meterToFoot(num2) {
+            num2 = parseFloat(num2);
+            document.getElementById("result").innerHTML = 3.279 * num2;
+        }
+    </script>
+
+</body>
+
+</html>

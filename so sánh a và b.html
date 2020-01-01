@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function compare(number1, number2) {
+            let sum = 0;
+            if (number1 > number2) {
+                alert("number1 lớn hơn number2");
+            } else {
+                sum = number1 + number2;
+                return sum;
+            }
+        }
+        let num1 = parseInt(prompt("nhập num1"));
+        let num2 = parseInt(prompt("nhập num2"));
+        let result = compare(num1, num2);
+        alert(result);
+
+
+    </script>
+
+</body>
+
+</html>

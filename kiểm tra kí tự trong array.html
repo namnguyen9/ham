@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemtra(array, kt) {
+            for (const i in array) {
+                if (array[i] === kt) {
+                    alert(kt);
+                    flast = true;
+                }
+
+            } if (flast === false) {
+                alert("không tìm thấy");
+            }
+        }
+        function main() {
+            array = ['a', 'b', 'c', 'd'];
+            kt = prompt("nhâp");
+            let result = kiemtra(array, kt);
+            alert(result);
+        }
+        main()
+    </script>
+</body>
+
+</html>

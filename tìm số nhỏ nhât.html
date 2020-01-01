@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function timmin(number1, number2, number3) {
+            if (number1 < number2 && number1 < number3) {
+                return number1;
+            } else if (number2 > number3) {
+                return number3;
+            } else {
+                return number2;
+            }
+        }
+        function main() {
+            number1 = +prompt("nhập number1");
+            number2 = +prompt("nhập number2");
+            number3 = +prompt("nhập number3");
+            let result = timmin(number1, number2, number3);
+            alert("min = " + result);
+        }
+        main();
+
+
+    </script>
+</body>
+
+</html>
